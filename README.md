@@ -1,4 +1,4 @@
-#Top-N-Paths
+# Top-N-Paths
 
 Project demonstrates capabilities of Java 8 Stream API and lambdas
 Task to find top most N-pages path in log like
@@ -27,7 +27,7 @@ Examples of N-page-paths, where N=3:
 ## example of maven build
 
 ```
-bash-3.2$ mvn clean install
+bash-3.2$ mvn clean test package
 [INFO] Scanning for projects...
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
@@ -35,24 +35,21 @@ bash-3.2$ mvn clean install
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ topnpath ---
-[INFO] Deleting /work/top3paths/topnpath/target
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ topnpath ---
-[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 0 resource
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ topnpath ---
 [INFO] Changes detected - recompiling the module!
-[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
 [INFO] Compiling 1 source file to /work/top3paths/topnpath/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ topnpath ---
-[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 1 resource
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ topnpath ---
 [INFO] Changes detected - recompiling the module!
-[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
 [INFO] Compiling 1 source file to /work/top3paths/topnpath/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ topnpath ---
@@ -69,25 +66,38 @@ export -> / -> subscribers
 / -> catalog -> edit
 catalog -> edit -> /
 edit -> / -> catalog
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec
 
 Results :
 
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ topnpath ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ topnpath ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ topnpath ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ topnpath ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ topnpath ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
 [INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ topnpath ---
 [INFO] Building jar: /work/top3paths/topnpath/target/topnpath-1.0-SNAPSHOT.jar
-[INFO] 
-[INFO] --- maven-install-plugin:2.4:install (default-install) @ topnpath ---
-[INFO] Installing /work/top3paths/topnpath/target/topnpath-1.0-SNAPSHOT.jar to /Users/vfilin/.m2/repository/topnpath/topnpath/1.0-SNAPSHOT/topnpath-1.0-SNAPSHOT.jar
-[INFO] Installing /work/top3paths/topnpath/pom.xml to /Users/vfilin/.m2/repository/topnpath/topnpath/1.0-SNAPSHOT/topnpath-1.0-SNAPSHOT.pom
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2.148 s
-[INFO] Finished at: 2017-04-24T11:55:32-07:00
-[INFO] Final Memory: 20M/307M
+[INFO] Total time: 2.499 s
+[INFO] Finished at: 2017-04-24T11:59:59-07:00
+[INFO] Final Memory: 20M/305M
 [INFO] ------------------------------------------------------------------------
 bash-3.2$ pwd
 /work/top3paths/topnpath
