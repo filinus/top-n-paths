@@ -195,3 +195,24 @@ Session.vim
 # auto-generated tag files
 tags
 
+.DS_Store
+.idea/artifacts/
+.idea/compiler.xml
+.idea/description.html
+.idea/inspectionProfiles/
+.idea/kotlinc.xml
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/php.xml
+.idea/project-template.xml
+.idea/uiDesigner.xml
+.idea/vcs.xml
+.idea/workspace.xml
+out/
+src/
+test/
+top3paths.iml
+topnpath/src/main/resources/
+topnpath/target/
+topnpath/topnpath.iml
